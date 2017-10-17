@@ -1,0 +1,168 @@
+@media screen and (max-width: 1679px){
+	.header {
+	    padding-top: 15px;
+	}
+	.logo {
+		height: 90px;
+	}
+	.header .load {
+	    margin-top: 20px;
+	}
+	.watch_portfolio{
+		margin-top: -150px;
+	}
+}
+@media screen and (max-width: 1439px){
+	body{
+		background-size: 60%;
+		background-position: 90% 90px;
+	}
+	.main_header{
+	    padding-top: 10px;
+	}
+	.logo{
+		height:80px;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.main, .main_header{
+		padding: 30px;
+		/*padding: 30px 40px 0 40px;/*top, right, bottom, and left*/
+	}
+	.header .load{
+	    margin-top: 15px;
+	}
+}
+@media screen and (max-width: 991px){
+	body{
+		background-size: 60%;
+		background-position: 90% 60px;
+	}
+	.main, .header{
+		padding: 30px;
+		/*padding: 30px 40px 0 40px;/*top, right, bottom, and left*/
+	}
+	.txt_big h1{
+		font-size: 1.5em;
+	}
+	.watch_portfolio{
+		margin-top: -200px;
+	}
+}
+@media screen and (max-width: 767px){/*iPad mini, tablets*/
+	body{
+		background-size: 60%;
+		background-position: 90% 150px;
+	}
+	.parallax{
+		display: none;
+	}
+	.main, .main_header {
+		padding: 0 15px;
+		padding-top: 10px;
+	}
+	.load1{
+		background:url(img/button2.png) no-repeat;
+		height: 78px;
+		width: 200px;
+		padding: 0 20px;
+		color: #fff;
+		font-size: 14px;
+	}
+}
+@media screen and (min-width: 601px){
+	.watch_portfolio{
+		-ms-transform: rotate(-90deg); /*in IE 9*/
+		-webkit-transform: rotate(-90deg); /*Safari*/
+		transform: rotate(-90deg); /*almost all browsers do not support properties "writing-mode" and "text-orientation"*/
+		transform-origin: right bottom 0;
+	}
+}
+@media screen and (max-width: 600px){/*tablet Nexux*/
+	body{
+		background-position: 100% 90px;
+	}
+	.txt_big h1{
+		font-size: 1.2em;
+	}
+	.watch_portfolio{
+		margin-top: -150px;
+	}
+}
+@media screen and (max-width: 500px){
+	body{
+		background-position: 100% 90px;
+	}
+	.s_1 img{
+		width: 60px;
+	}
+	.s_1 h1{
+		font-size: 1.2em;
+	}
+	.s_2 img{
+		width: 30px;
+	}
+	.txt_small p, .s_2 p{
+		font-size: 12px;
+	}
+	.watch_portfolio a{
+		font-size: 14px;
+		margin-top: -30px;
+	}
+	.txt_small{
+		width: 200px;
+	}
+	.txt_big h1{
+		font-size: 24px;
+	}
+	.laod1 img{
+		width: 150px;
+	}
+	.laod1{
+		background:#ccc;
+    height: 100px;
+    width: 200px;
+	}
+	.load1, a.load1 {
+		font-size: 14px;
+		height: 100px;
+		padding: 0 10px;
+	}
+}
+@media screen and (max-width: 400px){/*Android Devices, with width of 480 etc.*/
+	body{
+		background-size: 50%;
+		background-position: 100% 70px;
+	}
+	.main{
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 65px;
+	}
+	.txt_small{
+		width: 200px;
+	}
+	.txt_big h1{
+		font-size: 20px;
+	}
+	.s_2 img{
+		display: none;
+	}
+	.logo{
+		display: table;
+	}
+	.watch_portfolio{
+		font-size: 16px;
+		-ms-transform: rotate(-90deg); /*in IE 9*/
+		-webkit-transform: rotate(-90deg); /*Safari*/
+		transform: rotate(-90deg); /*almost all browsers do not support properties "writing-mode" and "text-orientation"*/
+		transform-origin: right bottom 0;
+		margin-top: -300px;
+	}
+	.load1{
+		background:url(img/button3.png) no-repeat;
+		height: 59px;
+		width: 150px;
+		font-size: 12px;
+	}
+}

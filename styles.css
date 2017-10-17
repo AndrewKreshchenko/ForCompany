@@ -1,0 +1,213 @@
+@font-face{
+    font-family: 'font_DINPro';
+    src: url('fonts/DINPro-CondBlack.eot') format('embedded-opentype'),
+    url('fonts/DINPro-CondBlack.woff') format('woff'),
+    url('fonts/DINPro-CondBlack.otf') format('opentype');
+    letter-spacing: 1px;
+}
+@font-face{
+    font-family: 'font_DINPro_Regular';
+    src: url('fonts/DINPro-Cond.eot') format('embedded-opentype'),
+    url('fonts/DINPro-Cond.woff') format('woff'),
+    url('fonts/DINPro-Cond.otf') format('opentype');
+}
+/*Font Roboto isn't cyrillic*/
+
+body{
+    background-color: #152938;
+    background-image: url('img/lion.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 70% 90px;
+    background-attachment: scroll;
+}
+h1, p, button{
+    font-family: 'font_DINPro';
+    letter-spacing: 1px;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #06ebed;
+}
+
+/*  Header */ 
+.header{
+    position: absolute;
+    height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 60px;/*top & bottom, left & right*/
+    padding-top: 20px;
+    z-index: 9;
+}
+.txt_small p, .s_2 p{
+    font-size: 16px;
+}
+.watch_portfolio{
+	overflow: hidden;
+    position: fixed;
+    width: 190px; 
+    right: 5%; 
+    top: 450px; 
+    margin: 0 0 0 110px;
+	}
+.watch_portfolio a{
+    font-size: 18px;
+}
+.logo{
+    margin: 0 0 40px 0;
+    display: -webkit-flex;/*in IE 9*/
+    display: flex;
+}
+.logo img{
+    padding-right: 10px;
+    position: relative;
+}
+.s_1, .s_2{
+    margin: 0 auto;
+    line-height: 0.3;
+}
+.s_1 p{
+    font-family: 'font_DINPro_Regular';
+    font-size: 14px;
+}
+.s_1 h1{
+    font-size: 1.5em;
+}
+.s_1 {
+    float: left;
+}
+.s_2 p:first-child{
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: condensed;
+    font-weight: lighter;
+}
+.s_2{
+    display: -webkit-box;   
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;    
+    display: flex;
+    float: right;
+}
+.flex-container {
+    display: -webkit-flex;/*in IE 9*/
+    display: flex;
+    width: 100%;
+    height: 550px;
+}
+
+/* Main content */
+.main{
+    height: 400px;
+    position: relative;
+    margin-top: 80px;
+    padding: 0 60px;
+    max-width: 100%;
+}
+
+/*  Main text*/
+.main .row,
+.text_main{
+    height: 100%;
+}
+.text_main{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    float: flex-start;
+}
+.txt_big{
+    font-family: 'font_DINPro';
+    font-size: 1.5em;
+}
+.txt_small p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: condensed;
+}
+
+/*Button styles*/
+.load1 button{
+    max-width: 100%;
+    max-height: 100%;
+}
+.load1{
+    background:url(img/button.png) no-repeat;
+    height: 117px;
+    width: 300px;
+    cursor:pointer;
+    border:none;
+    color: #fff;
+    font-size: 18px;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.load1 span{
+    position: relative;
+    z-index: 2;
+}
+.load1:active{
+    opacity: 0;
+    position: absolute;
+    content: "";
+    -webkit-animation-name: anim;
+    -webkit-animation-duration: 2s;
+    animation-name: anim;
+    animation-duration: 2s;
+}
+@-webkit-keyframes anim{
+    from{
+        -ms-transform: scale(0.7,0.7);
+        -webkit-transform: scale(0.7,0.7);
+        transform: scale(0.7,0.7);
+    }
+    to{
+        -ms-transform: scale(0.7,0.7);
+        -webkit-transform: scale(0.7,0.7);
+        transform: scale(0.7,0.7);
+    }
+}
+@keyframes anim{
+    from{
+        -ms-transform: scale(0.7,0.7);
+        -webkit-transform: scale(0.7,0.7);
+        transform: scale(0.7,0.7);
+    }
+    to{
+        -ms-transform: scale(0.7,0.7);
+        -webkit-transform: scale(0.7,0.7);
+        transform: scale(0.7,0.7);
+    }
+}
+.load1:hover:after {
+    opacity: 1;
+    border:none;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.main-header .load1{
+    float: right;
+    margin-top: 37px;
+    z-index: 99;
+    border:none;
+}
+/*Vertical text*/
+.watch_portfolio{
+    display: flex;
+    float: right;
+    font-size: 16px;
+}
+.watch_portfolio a{
+    font-family: 'font_DINPro';
+}

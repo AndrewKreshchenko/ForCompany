@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"><!--media="all" for devices-->
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" type="text/css" href="animation.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var moveConstant = .02;
+        var currentx = '';
+        var currenty = '';
+        $(document).mousemove(function(e) {
+            if(currentx == '')
+                currentx = e.pageX;
+            var xdiff = e.pageX - currentx;
+            currentx = e.pageX;
+            if(currenty == '')
+                currenty = e.pageY;
+            var ydiff = e.pageY - currenty;
+            currenty = e.pageY; 
+            $('.parallax div').each(function(i, el) {
+                var move = (i + 1)*(xdiff*moveConstant);
+                var move_y = (i + 1)*(ydiff*moveConstant);
+                var n_y = $(el).position().top + move_y;
+                var n_x = $(el).position().left + move;
+                $(el).css('left', n_x + 'px');
+                $(el).css('top', n_y + 'px');
+            });
+        });
+</script>
+</head>
+<body>
+    <div class="parallax">
+        <div class="water layer1"></div>
+        <div class="water layer2"></div>
+    </div>
+    <div class="header">
+        <div class="flex-contaner">
+            <div class="logo s_1">
+                <div><img draggable="false" src="img/logo.png"></div>
+                <div>
+                    <a href="https://www.kinsly.studio/"><h1>KINSLY</h1>
+                    <p>BRANDING STUDIO</p></a>
+                </div>
+            </div>
+            <div class="logo s_2">
+                <div><img src="img/call.png"></div>
+                <div>
+                    <p>+38 (098) 546-55-33</p>
+                    <p><a href="#">ЗАКАЗАТЬ ЗВОНОК</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="row"><!-- 12-column grid -->
+            <!--<div class="bg_image"><img src="img/lion.png"></div>-->
+            <div class="text_main">
+                <div class="txt_big">
+                    <h1>НУЖНО РАЗРАБОТАТЬ<br>ЛОГОТИП, ФИРМЕННЫЙ<br>СТИЛЬ ИЛИ БРЕНД-БУК?</h1>
+                </div>
+                <!-- Browser Chrome almost does not support Canvas Drawings, with JS. "D3" is JS library, that can help.-->
+                <div>
+                    <svg height="15" width="85">
+                        <polyline points="2,12 12,2 22,12 32,2 42,12 52,2 62,12 72,2 82,12" style="fill:none;stroke:#06ebed;;stroke-width:2">    
+                    </svg>
+                </div>
+                <div class="txt_small">
+                    <p>Скачайте PDF-презентацию с ценами на услуги,<br>сроками и нашим портфолио прямо сейчас!</p>
+                </div>
+                <div class="btn_shadow">
+                    <button class="load1">СКАЧАТЬ PDF ПРЕЗЕНТАЦИЮ</button>
+                </div>
+            </div>
+            <div class="watch_portfolio">
+                <a href="#"><svg height="16" width="16">
+                    <polyline points="0,0 8,8 0,16" style="fill:none;stroke:#06ebed;;stroke-width:2">
+                    </svg>СМОТРЕТЬ ПОРТФОЛИО
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

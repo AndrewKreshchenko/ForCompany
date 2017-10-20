@@ -9,7 +9,7 @@
 	    margin-top: 20px;
 	}
 	.watch_portfolio{
-		margin-top: -150px;
+		margin-top: -120px;
 	}
 }
 @media screen and (max-width: 1439px){
@@ -72,10 +72,18 @@
 }
 @media screen and (min-width: 601px){
 	.watch_portfolio{
-		-ms-transform: rotate(-90deg); /*in IE 9*/
-		-webkit-transform: rotate(-90deg); /*Safari*/
-		transform: rotate(-90deg); /*almost all browsers do not support properties "writing-mode" and "text-orientation"*/
+		-ms-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		transform: rotate(-90deg);
 		transform-origin: right bottom 0;
+	}
+	.txt_small{
+		width: 400px;
+	}
+}
+@media screen and (min-width: 401px) and (max-width: 600px){
+	polyline{
+		display: none;
 	}
 }
 @media screen and (max-width: 600px){/*tablet Nexux*/
@@ -85,8 +93,11 @@
 	.txt_big h1{
 		font-size: 1.2em;
 	}
+	.txt_small{
+		width: 270px;
+	}
 	.watch_portfolio{
-		margin-top: -150px;
+		margin-top: -80px;
 	}
 }
 @media screen and (max-width: 500px){
@@ -107,7 +118,9 @@
 	}
 	.watch_portfolio a{
 		font-size: 14px;
-		margin-top: -30px;
+	}
+	.watch_portfolio{
+		margin-top: -120px;
 	}
 	.txt_small{
 		width: 200px;
@@ -120,8 +133,8 @@
 	}
 	.laod1{
 		background:#ccc;
-    height: 100px;
-    width: 200px;
+		height: 100px;
+		width: 200px;
 	}
 	.load1, a.load1 {
 		font-size: 14px;
@@ -157,7 +170,7 @@
 		-webkit-transform: rotate(-90deg); /*Safari*/
 		transform: rotate(-90deg); /*almost all browsers do not support properties "writing-mode" and "text-orientation"*/
 		transform-origin: right bottom 0;
-		margin-top: -300px;
+		margin-top: -250px;
 	}
 	.load1{
 		background:url(img/button3.png) no-repeat;

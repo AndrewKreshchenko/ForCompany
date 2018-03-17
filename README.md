@@ -1,5 +1,7 @@
-# ForCompany
-Please, do not use this site for editing and publishing!
-Though it's only example of landing page, I don't recomend to use the html code of the page or the whole text as a basis for another site.
+# ForCompany 
+This is a *landing page*, also my test variant.
 
-Happy coding)
+```
+Please, do not use this work as the template or the whole text as a basis for another site! I recomend to use parts of the code that can be helpful for You.
+```
+Happy coding :dog:

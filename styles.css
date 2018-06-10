@@ -156,47 +156,7 @@ a{
     position: relative;
     z-index: 2;
 }
-.load1:active {
-    opacity: 0;
-    position: absolute;
-    content: "";
-    -webkit-animation-name: anim;
-    -webkit-animation-duration: 2s;
-    animation-name: anim;
-    animation-duration: 2s;
-}
-@-webkit-keyframes anim {
-    from {
-        -ms-transform: scale(1);
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    to {
-        -ms-transform: scale(0.85);
-        -webkit-transform: scale(0.85);
-        transform: scale(0.85);
-    }
-}
-@keyframes anim {
-    from {
-        -ms-transform: scale(1);
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    to {
-        -ms-transform: scale(0.85);
-        -webkit-transform: scale(0.85);
-        transform: scale(0.85);
-    }
-}
-.load1:hover:after {
-    opacity: 1;
-    border:none;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
-}
+
 .main-header .load1{
     float: right;
     margin-top: 37px;
